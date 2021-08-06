@@ -11,7 +11,7 @@ class Database{
     private $bdname;
     private $conn;
 
-    public function __construct($bdname,$server = "localhost",$user = "root",$pass = "")
+    public function __construct($bdname,$server = "localhost",$user =  "localhost",$pass = "")
     {
         $this->servername=$server;
         $this->username=$user;
@@ -21,7 +21,7 @@ class Database{
 
     private function getPDO(){
         if($this->conn===null){
-            $conn = new PDO("mysql:host=$this->servername;dbname=lapoo", $this->username, $this->password);
+            $conn = new PDO('mysql:host=localhost;dbname=lapoo','root','');
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->conn=$conn;
         }

@@ -1,13 +1,27 @@
+<div class="row">
+    <div class="col-sm-8">
 
-<ul>
+        <ul>
 
-    <?php foreach($db->query('SELECT * FROM articles', 'app\table\article') as $row): ?>
-        <li>
-           <p><a href="<?= $row->Url ?>"><?=$row->titre; ?></a></p> 
-           <p><?= $row->extrait ?> </p>
+            <?php
 
-    </li> 
-    <?php endforeach;?>
-</ul>
+use app\table\categorie;
 
-<a href="index.php?p=article"> aller au single</a>
+foreach (app\table\article::getLast() as $row) : ?>
+                <li>
+                    <p><a href="<?= $row->Url ?>"><?= $row->titre; ?></a></p>
+                    <p><?= $row->extrait ?> </p>
+                    <!-- <?php var_dump($row)  ?> -->
+
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        <ul>
+            <?php foreach(\app\table\Categorie::all() as $categorie): ?>
+            <li><a href="<?=$categorie->url ?>"></a> <?= $categorie->titre ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>

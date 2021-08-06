@@ -9,10 +9,10 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Album example · Bootstrap v5.0</title>
 
-    <link rel="stylesheet" href="../public/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="../public/css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="../public/css/bootstrap.css">
-    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
     
 
     <!-- Bootstrap core CSS -->

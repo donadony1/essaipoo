@@ -14,8 +14,8 @@ else{
     $p= 'home';
 }
 
-//initialisation des objets;
-$db = new app\Database('lapoo');
+// //initialisation des objets;
+// $db = new app\Database('lapoo');
 
 if($p==='home'){
     require '../pages/home.php';
